@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en" id="home">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="favicon.ico">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+
+      
+      <style> hr { 
+            width: 220px;
+              border-top: 4px solid #000000
+              }
+      </style>
+      <style type="text/css">
+  .progress {
+  position: relative;
+  height: 2px;
+  display: block;
+  width: 100%;
+  background-color: white;
+  border-radius: 2px;
+  background-clip: padding-box;
+  /*margin: 0.5rem 0 1rem 0;*/
+overflow: hidden;
+
+ }
+  .progress .indeterminate {
+  background-color:black; }
+  .progress .indeterminate:before {
+  content: '';
+  position: absolute;
+  background-color: #2C67B1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  will-change: left, right;
+  -webkit-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+  animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite; }
+  .progress .indeterminate:after {
+  content: '';
+  position: absolute;
+  background-color: #2C67B1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  will-change: left, right;
+  -webkit-animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+  animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+  -webkit-animation-delay: 1.15s;
+animation-delay: 1.15s; }
+
+
+ @-webkit-keyframes indeterminate {
+  0% {
+  left: -35%;
+  right: 100%; }
+  60% {
+  left: 100%;
+  right: -90%; }
+  100% {
+  left: 100%;
+  right: -90%; } }
+  @keyframes indeterminate {
+  0% {
+  left: -35%;
+  right: 100%; }
+  60% {
+  left: 100%;
+  right: -90%; }
+  100% {
+  left: 100%;
+  right: -90%; } }
+  @-webkit-keyframes indeterminate-short {
+  0% {
+  left: -200%;
+  right: 100%; }
+  60% {
+  left: 107%;
+  right: -8%; }
+  100% {
+  left: 107%;
+  right: -8%; } }
+  @keyframes indeterminate-short {
+  0% {
+  left: -200%;
+  right: 100%; }
+  60% {
+  left: 107%;
+  right: -8%; }
+  100% {
+  left: 107%;
+  right: -8%; } }
+</style>
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top -55
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
+<script>
+document.onreadystatechange = function () {
+if (document.readyState === "complete") {
+console.log(document.readyState);
+document.getElementById("PreLoaderBar").style.display = "none";
+}
+}
+</script>
+
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <div class="progress" id="PreLoaderBar">
+    <div class="indeterminate"></div>
+    </div>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#home">Sahid Kusuma</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    
+     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+          <a class="nav-link main" href="#home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link main" href="#Tentang">Tentang</a>
+      <li class="nav-item">
+          <a class="nav-link main" href="#portfolio">Portofolio</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link main" href="#Kontak">Kontak</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link active" href="doc/CV_Sahid_Kusuma.pdf">Curriculum Vitae</a>
+      </li>
+        
+      </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="bi bi-search"></i>Search</button>
+    </form>
+  </div>
+</nav>
+
+
+    <div class="jumbotron" id="home">
+      <div class="container">
+        <div class="text-center">
+          <img src="img/profile1.png" class="rounded-circle img-thumbnail img-fluid">
+          <br><br>
+          <b></b><h1>SAHID KUSUMA</h1></b>
+          <h5 class="lead">Network Engineer | Programmer | Digital Editor</h5>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Tentang -->
+    <section class="Tentang">
+      <div class="container">
+        <div class="row mb-4">
+          <div class="col text-center">
+            <h2 id="Tentang">Tentang </h2>
+            <hr>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-align-justify">
+            <p>Lahir di Bogor, 03 Juli 2002 Saya lulusan dari
+				SMK PGRI 2 Cibinong pada tahun 2020. 
+				Saya adalah orang yang sangat antusias 
+				dengan segala hal berbau teknologi dan software.</P>
+
+			<p>Saya seorang yang kreatif dan suka mencari alternatif 
+				solusi dari berbagai macam persoalan. Saya juga terbuka
+				terhadap semua kemungkinan solusi yang ada.
+				Kreativitas sangat membantu saya untuk menjadi 
+				pemimpin yang baik karena saya bisa mengantisipasi 
+				berbagai persoalan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="portfolio bg-light" id="portfolio">
+      <div class="container">
+        <div class="row pt-4 mb-4">
+          <div class="col text-center">
+            <h2>Portfolio</h2>
+            <hr class="text-center">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md mb-5">
+            <div class="card text-center">
+              <img class="card-img-top" src="img/thumbs/1.png" alt="Vector Art">
+              <div class="card-body">
+                <h5 class="card-title">Vector Art</h5>
+                <p class="card-text">Ini adalah karya Vector art saya yang di buat menggunakan Adobe Photoshop CS6</p>
+                <p class="card-text"><small class="text-muted">Last updated 1 mins ago</small></p>
+                <a href="img/thumbs/1.png" class="btn btn-primary">Perbesar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md mb-5">
+            <div class="card text-center">
+              <img class="card-img-top" src="img/thumbs/2.png" alt="Bot Whatsapp">
+              <div class="card-body">
+                <h5 class="card-title">Bot Whatsapp</h5>
+                <p class="card-text">gua ga jago ngoding ya anjir</p>
+                <br>
+                <p class="card-text"><small class="text-muted">Last updated 1 mins ago</small></p>
+                <a href="https://wa.me/6285863178015?text=/menu" class="btn btn-primary">Lanjut chat</a>
+              </div>
+            </div>
+
+          </div><div class="col-md mb-5">
+            <div class="card text-center">
+              <img class="card-img-top" src="img/thumbs/7.png" alt="Ini Vector anime version">
+              <div class="card-body">
+                <h5 class="card-title">Gua bingung</h5>
+                <p class="card-text">Gua aja bingung mau isi apaan lagi gak punya skill susah emng ya</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <a href="img/thumbs/7.png" class="btn btn-primary">Perbesar</a>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <!-- Kontak -->
+    <section class="Kontak" id="Kontak">
+      <div class="container">
+        <div class="row pt-4 mb-4">
+          <div class="col text-center">
+            <h2>Kontak</h2>
+            <hr>
+          </div>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-4">
+            <div class="card bg-primary text-white mb-4 text-center">
+              <div class="card-body">
+                <h3 class="card-title">Kontak Saya</h3>
+                <p class="card-text">Isi ke kontak saya atau bisa temui saya disini jika saya diperlukan </p>
+              </div>
+            </div>
+            
+            <ul class="list-group mb-4">
+              <li class="list-group-item"><h5>Lokasi</h5></li>
+              <li class="list-group-item">Rumah</li>
+              <li class="list-group-item">Kp. Padurenan RT 04/05 No.067 Pabuaran, Cibinong, Bogor, Jawa barat</li>
+              <li class="list-group-item"> Indonesia</li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6">
+            
+            <form>
+              <div class="form-group">
+                <label for="nama">Nama</label>
+                <input type="text" class="form-control" placeholder="Nama" id="nama">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" class="form-control" placeholder="xxxx@gmail.com" id="email">
+              </div>
+              <div class="form-group">
+                <label for="Telepon">Nomor telepon</label>
+                <input type="text" class="form-control" placeholder="+62XXXXXXXXXX" id="Telepon">
+              </div>
+              <div class="form-group">
+                <label for="Pesan">Pesan</label>
+                <textarea class="form-control" id="Pesan" placeholder="Ketik disini" rows="5"></textarea>
+              </div>
+              <div class="form-group">
+                <button type="button" class="btn btn-primary">Kirim Pesan</button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-dark text-white mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <p align="text-center">Copyright &copy; 2020.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <script src="js/script.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    
+  </body>
+</html>
