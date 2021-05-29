@@ -64,18 +64,7 @@ body {
     text-align: left;
   }
 }
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 60px;
-}
 </style>
-
-
 <link rel="shortcut icon" href="favicon.ico">
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -91,9 +80,22 @@ body {
 <link href="A.common-css,,_bootstrap.css+common-css,,_ionicons.css+common-css,,_fluidbox.min.css+01-cv-portfolio,,_css,,_styles.css+01-cv-portfolio,,_css,,_responsive.css,Mcc.TVPKZpDCZz.css.pagespeed.cf.E8Ry1hujiR.css" rel="stylesheet" />
 </head>
 <body>
-	
 <header>
-<div class="topnav" id="navbar">
+	
+
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("mytopnav").style.top = "0";
+  } else {
+    document.getElementById("mytopnav").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+<div class="topnav" id="myTopnav">
   <a href="#" class="active">Home</a>
   <a href="#portfolio">Portfolio</a>
   <a href="#tentang">About</a>
@@ -103,8 +105,6 @@ body {
     <i class="fa fa-bars"></i>
   </a>
 </div>
-
-<br>
 <br>
 
 <div class="container">
@@ -121,7 +121,7 @@ body {
 </div>
 <div class="col-sm-6 col-md-6 col-lg-4">
 <div class="info">
-<i class="fa fa-phone" aria-hidden="true"></i>
+<i class="icon ion-ios-telephone-outline"></i>
 <div class="right-area">
 <h5>+62 858-6317-8015</h5>
 <h6>MIN - FRI,8AM - 7PM</h6>
@@ -175,8 +175,7 @@ var currentScrollPos = window.pageYOffset;
   }
   prevScrollpos = currentScrollPos;
 }
-</script>
-<script data-pagespeed-no-defer>//<![CDATA[
+</script><script data-pagespeed-no-defer>//<![CDATA[
 (function(){for(var g="function"==typeof Object.defineProperties?Object.defineProperty:function(b,c,a){if(a.get||a.set)throw new TypeError("ES3 does not support getters and setters.");b!=Array.prototype&&b!=Object.prototype&&(b[c]=a.value)},h="undefined"!=typeof window&&window===this?this:"undefined"!=typeof global&&null!=global?global:this,k=["String","prototype","repeat"],l=0;l<k.length-1;l++){var m=k[l];m in h||(h[m]={});h=h[m]}
 var n=k[k.length-1],p=h[n],q=p?p:function(b){var c;if(null==this)throw new TypeError("The 'this' value for String.prototype.repeat must not be null or undefined");c=this+"";if(0>b||1342177279<b)throw new RangeError("Invalid count value");b|=0;for(var a="";b;)if(b&1&&(a+=c),b>>>=1)c+=c;return a};q!=p&&null!=q&&g(h,n,{configurable:!0,writable:!0,value:q});var t=this;
 function u(b,c){var a=b.split("."),d=t;a[0]in d||!d.execScript||d.execScript("var "+a[0]);for(var e;a.length&&(e=a.shift());)a.length||void 0===c?d[e]?d=d[e]:d=d[e]={}:d[e]=c};function v(b){var c=b.length;if(0<c){for(var a=Array(c),d=0;d<c;d++)a[d]=b[d];return a}return[]};function w(b){var c=window;if(c.addEventListener)c.addEventListener("load",b,!1);else if(c.attachEvent)c.attachEvent("onload",b);else{var a=c.onload;c.onload=function(){b.call(this);a&&a.call(this)}}};var x;function y(b,c,a,d,e){this.h=b;this.j=c;this.l=a;this.f=e;this.g={height:window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight,width:window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth};this.i=d;this.b={};this.a=[];this.c={}}
@@ -197,11 +196,11 @@ pagespeed.CriticalImages.Run('/mod_pagespeed_beacon','https://preview.colorlib.c
 <li><b>MARITAL STATUS : </b>Single</li>
 </ul>
 <ul class="social-icons">
-<li><a href="https://t.me/saaiitt"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
-<li><a href="https://instagram.com/sait_tama"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-<li><a href="https://github.com/saaiitt"><i class="fa fa-github" aria-hidden="true"></i></i></a></li>
-<li><a href="https://facebook.com/sahid.imannulhaq"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-<li><a href="https://twitter.com/sait_tama"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+<li><a href="#"><i class="ion-social-pinterest"></i></a></li>
+<li><a href="#"><i class="ion-social-linkedin"></i></a></li>
+<li><a href="#"><i class="ion-social-instagram"></i></a></li>
+<li><a href="#"><i class="ion-social-facebook"></i></a></li>
+<li><a href="#"><i class="ion-social-twitter"></i></a></li>
 </ul>
 </div>
 </div>
@@ -294,9 +293,9 @@ pagespeed.CriticalImages.Run('/mod_pagespeed_beacon','https://preview.colorlib.c
 <div class="row">
 <div class="col-sm-6 col-md-6 col-lg-3">
 <div class="radial-prog-area margin-b-30">
-<div class="radial-progress" data-prog-percent=".85">
+<div class="radial-progress" data-prog-percent=".97">
 <div></div>
-<h6 class="progress-title">MS. OFFICE</h6>
+<h6 class="progress-title">HTML5 & CSS3</h6>
 </div>
 </div>
 </div>
@@ -304,23 +303,23 @@ pagespeed.CriticalImages.Run('/mod_pagespeed_beacon','https://preview.colorlib.c
 <div class="radial-prog-area margin-b-30">
 <div class="radial-progress" data-prog-percent=".78">
 <div></div>
-<h6 class="progress-title">Vector art</h6>
+<h6 class="progress-title">WEB DESIGN</h6>
 </div>
 </div>
 </div>
 <div class="col-sm-6 col-md-6 col-lg-3">
 <div class="radial-prog-area margin-b-30">
-<div class="radial-progress" data-prog-percent=".70">
+<div class="radial-progress" data-prog-percent=".67">
 <div></div>
-<h6 class="progress-title">MIKROTIK</h6>
+<h6 class="progress-title">JAVA</h6>
 </div>
 </div>
 </div>
 <div class="col-sm-6 col-md-6 col-lg-3">
 <div class="radial-prog-area margin-b-50">
-<div class="radial-progress" data-prog-percent=".70">
+<div class="radial-progress" data-prog-percent=".97">
 <div></div>
-<h6 class="progress-title">LINUX</h6>
+<h6 class="progress-title">PHP</h6>
 </div>
 </div>
 </div>
@@ -392,13 +391,19 @@ menyimpan log pemeliharaan dan melaporkan kegiatan sehari-hari</p>
 <h4><b>Teknik Komputer dan Jaringan</b></h4>
 <h5 class="font-yellow"><b>SMK PGRI 2 CIBINONG</b></h5>
 <h6 class="font-lite-black margin-t-10">GRADUATED IN MAY 2020(3 YEARS)</h6>
-<p class="margin-tb-30">Sekolah digocir emang gitu dah anjir puyeng gw klo ditanya skill mah gua bisa mereun </p>
+<p class="margin-tb-30">Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus pellentes que velit,
+quis consequat nulla effi citur at. Maecenas sed massa tristique.Duis non volutpat arcu,
+eu mollis tellus. Sed finibus aliquam neque sit amet sodales. </p>
 </div>
 <div class="education margin-b-50">
 <h4><b>Teknik Informatika</b></h4>
 <h5 class="font-yellow"><b>Universitas Indraprasta PGRI</b></h5>
 <h6 class="font-lite-black margin-t-10">JOIN ON MAY 2020(NOW)</h6>
-<p class="margin-tb-30">Sebenernya mah ada passion di Teknik Informatika cuman makin kesini materinya bikin pusing aje kayak kalkulus, algoritma, Logika matematika dll dah</p>
+<p class="margin-tb-30">Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sodales.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla maximus pellentes que velit,
+quis consequat nulla effi citur at. Maecenas sed massa tristique.Duis non volutpat arcu,
+eu mollis tellus. Sed finibus aliquam neque sit amet sodales. </p>
 </div>
 </div>
 </div>
@@ -411,22 +416,6 @@ menyimpan log pemeliharaan dan melaporkan kegiatan sehari-hari</p>
 <script src="common-js/tether.min.js"></script>
 <script src="common-js/bootstrap.js"></script>
 <script src="common-js/isotope.pkgd.min.js+jquery.waypoints.min.js+progressbar.min.js+jquery.fluidbox.min.js+scripts.js.pagespeed.jc.9Pm3Vx--mG.js"></script><script>eval(mod_pagespeed_c1zmmXJ4$R);</script>
-
-<script>
-window.onscroll = function() {myFunction()};
-
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-</script>
-
 <script>eval(mod_pagespeed_yu8C2OtpiI);</script>
 <script>eval(mod_pagespeed_RxhYnZjBKa);</script>
 <script>eval(mod_pagespeed_FiXB1FkK3F);</script>
