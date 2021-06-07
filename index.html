@@ -75,6 +75,47 @@ body {
 }
 </style>
 
+<style type="text/css">
+            #keatas {
+position: fixed;
+bottom: 70px;
+right: 40px;
+opacity: 0.9;
+}
+#keatas a {
+width: 45px;
+display: block;
+text-align: center;
+font: 11px/100% Arial, Helvetica, sans-serif;
+text-transform: uppercase;
+text-decoration: none;
+color: #ffad01;
+-webkit-transition: 1s;
+-moz-transition: 1s;
+transition: 1s;
+}
+#keatas a:hover {
+color: #8d8da6;
+}
+/* icon panah */
+#keatas span {
+width: 40px;
+height: 40px;
+display: block;
+margin-bottom: 7px;
+background: #ffad01 url(Arrow_top.png) no-repeat center center;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+-webkit-transition: 1s;
+-moz-transition: 1s;
+transition: 1s;
+}
+#keatas a:hover span {
+background-color: #8d8da6;
+}
+        </style>
+
 
 <link rel="shortcut icon" href="favicon.ico">
 <!-- Bootstrap CSS -->
@@ -91,7 +132,7 @@ body {
 <link href="A.common-css,,_bootstrap.css+common-css,,_ionicons.css+common-css,,_fluidbox.min.css+01-cv-portfolio,,_css,,_styles.css+01-cv-portfolio,,_css,,_responsive.css,Mcc.TVPKZpDCZz.css.pagespeed.cf.E8Ry1hujiR.css" rel="stylesheet" />
 </head>
 <body>
-	
+  
 <header>
 <div class="topnav" id="navbar">
   <a href="#" class="active">Home</a>
@@ -228,7 +269,7 @@ pagespeed.CriticalImages.Run('/mod_pagespeed_beacon','https://preview.colorlib.c
 </div>
 </div>
 <div class="portfolioContainer">
-		<div class="row">
+    <div class="row">
           <div class="col-md mb-5">
             <div class="card text-center">
               <img class="card-img-top" src="img/thumbs/1.png" alt="Vector Art" data-cat:"s">
@@ -278,18 +319,20 @@ pagespeed.CriticalImages.Run('/mod_pagespeed_beacon','https://preview.colorlib.c
 </div>
 <div class="col-sm-8">
 <p class="margin-b-50"><p>Lahir di Bogor, 03 Juli 2002 Saya lulusan dari
-				SMK PGRI 2 Cibinong pada tahun 2020. 
-				Saya adalah orang yang sangat antusias 
-				dengan segala hal berbau teknologi dan software.</P>
+        SMK PGRI 2 Cibinong pada tahun 2020. 
+        Saya adalah orang yang sangat antusias 
+        dengan segala hal berbau teknologi dan software.</P>
 
-			<p>Saya seorang yang kreatif dan suka mencari alternatif 
-				solusi dari berbagai macam persoalan. Saya juga terbuka
-				terhadap semua kemungkinan solusi yang ada.
-				Kreativitas sangat membantu saya untuk menjadi 
-				pemimpin yang baik karena saya bisa mengantisipasi 
-				berbagai persoalan.</p>
+      <p>Saya seorang yang kreatif dan suka mencari alternatif 
+        solusi dari berbagai macam persoalan. Saya juga terbuka
+        terhadap semua kemungkinan solusi yang ada.
+        Kreativitas sangat membantu saya untuk menjadi 
+        pemimpin yang baik karena saya bisa mengantisipasi 
+        berbagai persoalan.</p>
 <br>
 <br>
+
+
 <div class="row">
 <div class="col-sm-6 col-md-6 col-lg-3">
 <div class="radial-prog-area margin-b-30">
@@ -403,7 +446,9 @@ menyimpan log pemeliharaan dan melaporkan kegiatan sehari-hari</p>
 </div>
 </div>
 </div>
-
+<p id="keatas">
+<a href="#atas"><span></span><b>Ke atas</b></a>
+</p>
 
 <script src="https://unpkg.com/ionicons@5.5.1/dist/ionicons.js"></script>
 <script src="common-js/jquery-3.2.1.min.js"></script>
@@ -437,6 +482,35 @@ function myFunction() {
   gtag('js', new Date());
 
   gtag('config', 'UA-23581568-13');
+</script>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  
+<script>
+$(document).ready(function(){
+// menyembunyikan id #keatas
+$("#keatas").hide();
+  
+// memberikan efek fade in pada id #keatas
+$(function () {
+$(window).scroll(function () {
+if ($(this).scrollTop() > 100) {
+$('#keatas').fadeIn();
+} else {
+$('#keatas').fadeOut();
+}
+});
+  
+// scroll halaman ke 0px (ke body) ketika diklik
+$('#keatas a').click(function () {
+$('body,html').animate({
+scrollTop: 0
+}, 800);
+return false;
+});
+});
+  
+});
 </script>
 <footer>
 <p class="copyright">
