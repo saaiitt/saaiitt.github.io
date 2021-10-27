@@ -1080,15 +1080,15 @@ audio {
 	bottom: -200px;
 	opacity: 0.6;
 	z-index: 99;
-	width: 30px;
-	height: 63px;
+	width: 70px;
+	height: 153px;
 	background-repeat: no-repeat no-repeat;
-	background-size: 30px 63px;
+	background-size: 70px 153px;
 }
 .balloons h2 {
 	text-transform: uppercase;
 	font-family: 'Signika', sans-serif;
-	font-size: 20px;
+	font-size: 50px;
 	color: #BF4136;
 	text-shadow: 5px 5px 5px #FFF;
 	display: none;
