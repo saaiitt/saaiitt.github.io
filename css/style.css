@@ -1,13 +1,14 @@
-html{
-	 scroll-behavior: smooth;
+html {
+	scroll-behavior: smooth;
+   margin:0;
+   padding:0;
+   height:100%;
 }
 
-body {
-    margin-top: 50px;
-}
+
 
 .jumbotron {
-	background-image: url('../img/bg/23832.jpg');
+	background-image: url('img/bg/23832.jpg');
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: 0 -100px;
@@ -20,9 +21,18 @@ body {
     box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
 }
 
-.jumbotron h1, .jumbotron p{
+.jumbotron h2, .jumbotron p{
 	text-shadow: 1px 1px 10px rgba(0,0,0,0.5);
 	overflow: hidden;
+}
+.jumbotron .text h2 .cursor{
+	display: inline-block;
+	background: #ccc url('img/bg/23832.jpg') center center;
+	width: 3px;
+	animation: blink 1s infinite;
+}
+.jumbotron .text h2 .cursor .typing {
+	animation: none;
 }
 .Tentang p { 
 	text-align: center;
@@ -40,7 +50,7 @@ body {
 }
 
 h1{
-	font-size: 60px;
+	font-size: 40px;
 }
 
 h2{
@@ -57,9 +67,215 @@ section {
 }
 
 footer {
-    min-height: 50px;
-    padding-top:12px;
+	padding-top: 3px; 
+    position: relative;
+    height: 20px;
+    margin-bottom: 0;
+    bottom: 0;
+    width: 100%;
+
 }
-.navbar-brand{
-	font-family: 'Dancing Script', cursive;
+/*=============================== ===========================*/
+* {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  quotes: none;
+  text-decoration: unset;
+  outline: none;
+  border: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*=============================== ===========================*/
+  
+ /*Catatan : Atur height pada body menjadi 100%*/
+
+ /*Karena ini hanya contoh agar effect navbar scrollnya bisa terlihat*/
+
+/*=============================== ===========================*/
+
+body {
+  height: 4000px;
+  width: 100%;
+  position: relative;
+  margin: 0px auto;
+  background-color: #fdfdfd;
+}
+
+.nav {
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: #28023d;
+  transition: .3s;
+}
+
+.nav.active {
+          box-shadow: 0 2px 10px rgba(0,0,0,.1);
+}
+
+.nav.hide {
+   top: -150px !important;
+}
+
+.nav-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #28023d;
+  padding: 15px 0;
+
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: black;
+}
+.brand span {
+  color: white;
+}
+
+.brand img {
+  width: 150px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.nav-burger {
+  width: 30px;
+  cursor: pointer;
+  color: white;
+}
+
+.nav-menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-height: 0;
+  opacity: 0;
+  -webkit-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+  visibility: hidden;
+  margin-top: 10px;
+}
+
+.nav-menu a {
+  padding: 10px 0;
+  width: 100%;
+  margin: 5px 0;
+  color: white;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+}
+
+.nav-menu a:nth-child(6) {
+  font-weight: bold;
+}
+
+
+.nav-menu.active {
+  max-height: 200rem;
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav-menu-dekstop {
+  display: none;
+}
+
+@media screen and (min-width: 968px) {
+    .nav-burger {
+      display: none;
+    }
+
+    .nav-menu {
+      width: inherit;
+      display: flex;
+      flex-direction: row;
+      max-height: inherit;
+      opacity: inherit;
+      -webkit-transition: inherit;
+      -o-transition: inherit;
+      transition: inherit;
+      visibility: inherit;
+      margin-top: inherit;
+      padding-left: 500px;
+      /*background-color: */
+    }
+
+    .nav-menu a {
+      padding: 10px 10px;
+      margin: 0 10px;
+      width: inherit;
+      /*margin: 5px 0;*/
+      cursor: pointer;
+      display: inherit;
+      position: inherit;
+      display: flex;
+      position: relative;
+    }
+
+    /* Jika ingin menu di dekstop ada 3 */
+    /*.nav-menu a:nth-child(5),
+    .nav-menu a:nth-child(6) {
+      display: none;
+    }*/
+
+    /*Jika ingin menu di dekstop ada sign up dan login, beri komentar script
+      .nav-menu a:nth-child(5),
+      .nav-menu a:nth-child(6) {
+          display: none;
+      }
+    */
+
+    .nav-menu-dekstop {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .nav-menu-dekstop a {
+      padding: 5px 15px;
+      width: inherit;
+      margin: 0 5px;
+      /*margin: 5px 0;*/
+      cursor: pointer;
+      display: inherit;
+      position: inherit;
+      display: flex;
+      position: relative;
+      color: black;
+    }
+
+    .nav-menu-dekstop a:nth-child(2) {
+      border: 1px solid black;
+      border-radius: 10px;
+    }
+
+
 }

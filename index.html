@@ -8,72 +8,6 @@
 <meta charset="UTF-8">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #ffad01;
-  background-size: auto;
-  color: white;
-}
-
-.topnav .icon {
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 60px;
-}
-</style>
 
 <style type="text/css">
             #keatas {
@@ -128,25 +62,54 @@ background-color: #8d8da6;
 
 <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700%7CAllura" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="common.css" rel="stylesheet" />
 
-<link href="A.common-css,,_bootstrap.css+common-css,,_ionicons.css+common-css,,_fluidbox.min.css+01-cv-portfolio,,_css,,_styles.css+01-cv-portfolio,,_css,,_responsive.css,Mcc.TVPKZpDCZz.css.pagespeed.cf.E8Ry1hujiR.css" rel="stylesheet" />
+  <link href="https://fonts.gstatic.com" rel="preconnect"></link>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,600&amp;display=swap" rel="stylesheet"></link>
 </head>
 <body>
-  
+  <nav class="nav">
+    <div class="nav-area">
+      <a class="brand" href="">
+        <!-- Text -->
+        <span>Sahid Kusuma</span>
+
+        <!-- IMG -->
+        <!-- <img src="" alt=""> -->
+      </a>
+
+      <svg class="nav-burger" fill="none" stroke="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+
+      <div class="nav-menu">
+        <a href="#portfolio">Portfolio</a>
+        <a href="#tentang">About</a>
+        <a href="#pengalaman">Work</a>
+        <a href="#pendidikan">Education</a>
+
+      <!-- Jika ingin 2 menu, atur script css nya pada mode dekstop ukuran 968px 
+         agar displaynya menjadi block dengan memberi komentar css .nav-menu-dekstop 
+        <a href="">Sign Up</a>
+        <a href="">Login</a>
+      </div> -->
+
+      <!-- Jika ingin 2 menu di navbar, beri komentar script html yang ini -->
+      <!--<div class="nav-menu-dekstop">
+        <a href="#">Sign Up</a>
+        <a href="#">Login</a>
+      </div>-->
+    </div>
+    
+  </nav>
+  <script src="js/main.js"></script>
+ 
+
 <header>
-<div class="topnav" id="navbar">
-  <a href="#" class="active">Home</a>
-  <a href="#portfolio">Portfolio</a>
-  <a href="#tentang">About</a>
-  <a href="#pengalaman">Work</a>
-  <a href="#pendidikan">Education</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
+
 
 <br>
 <br>
+<br>
+
 
 <div class="container">
 <div class="heading-wrapper">
@@ -165,7 +128,7 @@ background-color: #8d8da6;
 
 <div class="right-area">
 <h5>+62 858-6317-8015</h5>
-<h6>MIN - FRI,8AM - 7PM</h6>
+<h6>Whatsapp</h6>
 </div>
 </div>
 </div>
@@ -193,29 +156,7 @@ background-color: #8d8da6;
 <div class="intro">
 <div class="profile-img">
 
-<script>
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
 
-<script>
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-50px";
-  }
-  prevScrollpos = currentScrollPos;
-}
-</script>
 <script data-pagespeed-no-defer>//<![CDATA[
 (function(){for(var g="function"==typeof Object.defineProperties?Object.defineProperty:function(b,c,a){if(a.get||a.set)throw new TypeError("ES3 does not support getters and setters.");b!=Array.prototype&&b!=Object.prototype&&(b[c]=a.value)},h="undefined"!=typeof window&&window===this?this:"undefined"!=typeof global&&null!=global?global:this,k=["String","prototype","repeat"],l=0;l<k.length-1;l++){var m=k[l];m in h||(h[m]={});h=h[m]}
 var n=k[k.length-1],p=h[n],q=p?p:function(b){var c;if(null==this)throw new TypeError("The 'this' value for String.prototype.repeat must not be null or undefined");c=this+"";if(0>b||1342177279<b)throw new RangeError("Invalid count value");b|=0;for(var a="";b;)if(b&1&&(a+=c),b>>>=1)c+=c;return a};q!=p&&null!=q&&g(h,n,{configurable:!0,writable:!0,value:q});var t=this;
@@ -229,7 +170,9 @@ u("pagespeed.CriticalImages.Run",function(b,c,a,d,e,f){var r=new y(b,c,a,e,f);x=
 
 pagespeed.CriticalImages.Run('/mod_pagespeed_beacon','https://preview.colorlib.com/theme/cvportfolio/','-ilGEe-FWC',true,false,'dBWwrJbcCq0');
 //]]></script><img src="images/boy_flat_design.jpg" alt="" data-pagespeed-url-hash="1246592755" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></div>
-<h2><b>Sahid Kusuma</b></h2>
+<h2 class="h2"> Hi, I'm</h2>
+<h2 class="h2"><span class="span elvina typed-text"></span><span class="cursor">&nbsp;</span></h2>
+
 <h4 class="font-yellow">Junior Programmer</h4>
 <ul class="information margin-tb-30">
 <li><b>BORN : </b>July, 03 2002</li>
@@ -248,6 +191,7 @@ pagespeed.CriticalImages.Run('/mod_pagespeed_beacon','https://preview.colorlib.c
 </div>
 </div>
 </section>
+
 <section class="portfolio-section section" id="portfolio">
 <div class="container">
 <div class="row" id="portfolio">
@@ -260,9 +204,9 @@ pagespeed.CriticalImages.Run('/mod_pagespeed_beacon','https://preview.colorlib.c
 <div class="col-sm-8">
 <div class="portfolioFilter clearfix margin-b-80">
 <a href="#" data-filter="*" class="current"><b>ALL</b></a>
-<a href="#" data-filter=".vector"><b>VECTOR ART</b></a>
-<a href="#" data-filter=".branding"><b>FLAT DESIGN</b></a>
-<a href="#" data-filter=".graphic-design"><b>BOT WHATSAPP</b></a>
+<a href="#" data-filter="*" class="current"><b>VECTOR ART</b></a>
+<a href="#" data-filter="*" class="current"><b>FLAT DESIGN</b></a>
+<a href="#" data-filter="*" class="current"><b>BOT WHATSAPP</b></a>
 </div>
 </div>
 </div>
@@ -271,12 +215,12 @@ pagespeed.CriticalImages.Run('/mod_pagespeed_beacon','https://preview.colorlib.c
     <div class="row">
           <div class="col-md mb-5">
             <div class="card text-center">
-              <img class="card-img-top" src="img/thumbs/1.png" alt="Vector Art" data-cat:"s">
+              <img class="card-img-top" src="img/thumbs/1.png" alt="Vector Art" data-cat:>
               <div class="card-body">
                 <h5 class="card-title">Vector Art</h5>
-                <p class="card-text">Ini adalah karya Vector art saya yang di buat menggunakan Adobe Photoshop CS6</p>
+                <p class="card-text">This is my vector art created using Adobe Photoshop CS6</p>
                 <p class="card-text"><small class="text-muted">Last updated 1 mins ago</small></p>
-                <a href="img/thumbs/1.png" class="btn btn-primary">Perbesar</a>
+                <a href="img/thumbs/1.png" class="btn btn-primary">View</a>
               </div>
             </div>
           </div>
@@ -286,10 +230,10 @@ pagespeed.CriticalImages.Run('/mod_pagespeed_beacon','https://preview.colorlib.c
               <img class="card-img-top" src="img/thumbs/2.png" alt="Bot Whatsapp">
               <div class="card-body">
                 <h5 class="card-title">Bot Whatsapp</h5>
-                <p class="card-text">gua ga jago ngoding ya anjir</p>
-                <br>
+                <p class="card-text">IDK, still amateur for this</p>
                 <p class="card-text"><small class="text-muted">Last updated 1 mins ago</small></p>
-                <a href="https://wa.me/6285863178015?text=/menu" class="btn btn-primary">Lanjut chat</a>
+                <br>
+                <a href="https://wa.me/6285863178015?text=/menu" class="btn btn-primary">Chat</a>
               </div>
             </div>
 
@@ -297,14 +241,85 @@ pagespeed.CriticalImages.Run('/mod_pagespeed_beacon','https://preview.colorlib.c
             <div class="card text-center">
               <img class="card-img-top" src="img/thumbs/7.png" alt="Ini Vector anime version">
               <div class="card-body">
-                <h5 class="card-title">Gua bingung</h5>
-                <p class="card-text">Gua aja bingung mau isi apaan lagi gak punya skill susah emng ya</p>
+                <h5 class="card-title">Vector anime version</h5>
+                <p class="card-text">IDK, still amateur for this</p>
                 <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                <a href="img/thumbs/7.png" class="btn btn-primary">Perbesar</a>
+                <br>
+                <a href="img/thumbs/7.png" class="btn btn-primary">View</a>
               </div>
             </div>
           </div>
+
+
+          <div class="col-md mb-5">
+            <div class="card text-center">
+              <img class="card-img-top" src="img/thumbs/PDI.png" alt="pdi">
+              <div class="card-body">
+                <h5 class="card-title">POPOWI</h5>
+                <p class="card-text">IDK, still amateur for this</p>
+                <p class="card-text"><small class="text-muted">Last updated 1 mins ago</small></p>
+                <br>
+                <a href="https://saaiitt.github.io/owi/" class="btn btn-primary">Open</a>
+              </div>
+            </div>
 </div>
+
+<div class="row">
+          <div class="col-md mb-5">
+            <div class="card text-center">
+              <img class="card-img-top" src="img/thumbs/luv.jpg" alt="luv" data-cat:>
+              <div class="card-body">
+                <h5 class="card-title">Do you Love me?</h5>
+                <p class="card-text">Created with bootstrap</p>
+                <p class="card-text"><small class="text-muted">Last updated 1 mins ago</small></p>
+                <br>
+                <a href="https://saaiitt.github.io/luv/" class="btn btn-primary">Open</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md mb-5">
+            <div class="card text-center">
+              <img class="card-img-top" src="img/thumbs/fire.jpg" alt="Bot Whatsapp">
+              <div class="card-body">
+                <h5 class="card-title">Burning Fire Photo</h5>
+                <p class="card-text">Shot on Camera Canon EOS 200D</p>
+                <p class="card-text"><small class="text-muted">Last updated 1 mins ago</small></p>
+                <br>
+                <a href="img/thumbs/fire.jpg" class="btn btn-primary">View</a>
+              </div>
+            </div>
+
+          </div><div class="col-md mb-5">
+            <div class="card text-center">
+              <img class="card-img-top" src="img/thumbs/mobile.png" alt="Mobile apps">
+              <div class="card-body">
+                <h5 class="card-title">My Mobile Apps</h5>
+                <p class="card-text">This is my blog in mobile app </p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <br>
+                <a href="doc/sait_blog.apk" class="btn btn-primary">Download</a>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md mb-5">
+            <div class="card text-center">
+              <img class="card-img-top" src="img/thumbs/lonely.jpg" alt="Fan">
+              <div class="card-body">
+                <h5 class="card-title">Lonely Fan</h5>
+                <p class="card-text">Shot on Camera Canon EOS 200D</p>
+                <p class="card-text"><small class="text-muted">Last updated 1 mins ago</small></p>
+                <br>
+                <a href="img/thumbs/lonely.jpg" class="btn btn-primary">View</a>
+              </div>
+            </div>
+</div>
+</div>
+
+
+          
 </section>
 <section class="about-section section" id="tentang">
 <div class="container">
@@ -316,17 +331,10 @@ pagespeed.CriticalImages.Run('/mod_pagespeed_beacon','https://preview.colorlib.c
 </div>
 </div>
 <div class="col-sm-8">
-<p class="margin-b-50"><p>Lahir di Bogor, 03 Juli 2002 Saya lulusan dari
-        SMK PGRI 2 Cibinong pada tahun 2020. 
-        Saya adalah orang yang sangat antusias 
-        dengan segala hal berbau teknologi dan software.</P>
-
-      <p>Saya seorang yang kreatif dan suka mencari alternatif 
-        solusi dari berbagai macam persoalan. Saya juga terbuka
-        terhadap semua kemungkinan solusi yang ada.
-        Kreativitas sangat membantu saya untuk menjadi 
-        pemimpin yang baik karena saya bisa mengantisipasi 
-        berbagai persoalan.</p>
+<p class="margin-b-50"><p>Born in Bogor, July 03, 2002 I graduated from SMK PGRI 2 Cibinong in 2020. I am a person who is very enthusiastic about all things technology and software.</P>
+<br>
+      <p>I am a creative person and like to find alternative solutions to various problems.
+         I am also open to all possible solutions. Creativity really helps me to be a good leader because I can anticipate various problems.</p>
 <br>
 <br>
 
@@ -380,29 +388,29 @@ pagespeed.CriticalImages.Run('/mod_pagespeed_beacon','https://preview.colorlib.c
 </div>
 <div class="col-sm-8">
 <div class="experience margin-b-50">
-<h4><b>Administrasi Maintenance (Magang)</b></h4>
+<h4><b>Maintenance Administrator (Intern)</b></h4>
 <h5 class="font-yellow"><b>PT. Murni Cahaya Pratama</b></h5>
-<h6 class="margin-t-10">November 2018 - Maret 2019</h6>
+<h6 class="margin-t-10">November 2018 - March 2019</h6>
 <p class="font-semi-white margin-tb-30">
-Memeriksa sistem yang ada di perusahaan dan memastikannya selalu dalam keadaan baik dan
-memantau inventaris peralatan dan melakukan pemesanan jika diperlukan serta 
-memantau pengeluaran dan mengendalikan anggaran untuk pemeliharaan (maintenance) dan
-menyimpan log pemeliharaan dan melaporkan kegiatan sehari-hari</p>
+Check the existing system in the company and make sure it is always in good condition and
+monitor equipment inventory and place orders if needed as well as
+monitor expenditures and control budgets for maintenance and
+keep maintenance logs and report on daily activities</p>
 <ul class="list margin-b-30">
-<li>Pembuatan laporan kas kecil</li>
-<li>Penginputan laporan kerusakan inventaris</li>
-<li>Pencetakan laporan pemeliharaan barang</li>
+<li>Making petty cash reports</li>
+<li>Inventory damage report input</li>
+<li>Goods maintenance report printing</li>
 </ul>
 </div>
 <div class="experience margin-b-50">
-<h4><b>IT Support (Magang)</b></h4>
+<h4><b>IT Support (Intern)</b></h4>
 <h5 class="font-yellow"><b>CV. Tenzi Jaya Sutar</b></h5>
 <h6 class="margin-t-10">Mei 2020 - Juni 2020</h6>
-<p class="font-semi-white margin-tb-30">Bertugas sebagai IT Support dibagian lapangan </p>
+<p class="font-semi-white margin-tb-30">Served as IT Support in the field</p>
 <ul class="list margin-b-30">
-<li>Pemasangan Access Point</li>
-<li>Konfigurasi Mikrotik</li>
-<li>Pemasangan kabel jaringan</li>
+<li>Access Point Installation</li>
+<li>Mikrotik Configuration</li>
+<li>Installation dan Network cabling</li>
 </ul>
 </div>
 </div>
@@ -422,22 +430,22 @@ menyimpan log pemeliharaan dan melaporkan kegiatan sehari-hari</p>
 <div class="col-sm-8">
 <div class="education-wrapper">
 <div class="education margin-b-50">
-<h4><b>Pendidikan Menengah Pertama</b></h4>
+<h4><b>Junior high school</b></h4>
 <h5 class="font-yellow"><b>SMP NEGERI 04 CIBINONG</b></h5>
-<h6 class="font-lite-black margin-t-10">GRADUATED IN MAY 2017(3 YEARS)</h6>
-<p class="margin-tb-30">Angkatan Ke-7 dari SMP NEGERI 4 CIBINONG, Sekolah Menengah Pertama dengan Akreditasi A dikelasnya</p>
+<h6 class="font-lite-black margin-t-10">GRADUATED IN MAY 2017 (3 YEARS)</h6>
+<p class="margin-tb-30">7th batch from SMP NEGERI 4 CIBINONG, Junior High School with Accreditation A in it's class</p>
 </div>
 <div class="education margin-b-50">
-<h4><b>Teknik Komputer dan Jaringan</b></h4>
+<h4><b>Vocational Technicology School</b></h4>
 <h5 class="font-yellow"><b>SMK PGRI 2 CIBINONG</b></h5>
-<h6 class="font-lite-black margin-t-10">GRADUATED IN MAY 2020(3 YEARS)</h6>
-<p class="margin-tb-30">Sekolah digocir emang gitu dah anjir puyeng gw klo ditanya skill mah gua bisa mereun </p>
+<h6 class="font-lite-black margin-t-10">GRADUATED IN MAY 2020 (3 YEARS)</h6>
+<p class="margin-tb-30">Major of Computer Network Engineering, 20th batch from SMK PGRI 2 CIBINONG Vocational Technicology School with Accreditation A in it's class </p>
 </div>
 <div class="education margin-b-50">
-<h4><b>Teknik Informatika</b></h4>
+<h4><b>University</b></h4>
 <h5 class="font-yellow"><b>Universitas Indraprasta PGRI</b></h5>
-<h6 class="font-lite-black margin-t-10">JOIN ON MAY 2020(NOW)</h6>
-<p class="margin-tb-30">Sebenernya mah ada passion di Teknik Informatika cuman makin kesini materinya bikin pusing aje kayak kalkulus, algoritma, Logika matematika dll dah</p>
+<h6 class="font-lite-black margin-t-10">JOIN ON MAY 2020 (NOW)</h6>
+<p class="margin-tb-30">Major of Technical Information, now i'm learning as a junior programming here about web design and javascript</p>
 </div>
 </div>
 </div>
@@ -509,6 +517,49 @@ return false;
   
 });
 </script>
+<script>
+      const typedTextSpan = document.querySelector(".typed-text");
+      const cursorSpan = document.querySelector(".cursor");
+
+      const textArray = ["Sahid Kusuma"];
+      const typingDelay = 100;
+      const erasingDelay = 100;
+      const newTextDelay = 2500; // Delay between current and next text
+      let textArrayIndex = 0;
+      let charIndex = 0;
+
+      function type() {
+        if (charIndex < textArray[textArrayIndex].length) {
+          if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+          typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+          charIndex++;
+          setTimeout(type, typingDelay);
+        } 
+        else {
+          cursorSpan.classList.remove("typing");
+            setTimeout(erase, newTextDelay);
+        }
+      }
+
+      function erase() {
+          if (charIndex > 0) {
+          if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+          typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+          charIndex--;
+          setTimeout(erase, erasingDelay);
+        } 
+        else {
+          cursorSpan.classList.remove("typing");
+          textArrayIndex++;
+          if(textArrayIndex>=textArray.length) textArrayIndex=0;
+          setTimeout(type, typingDelay + 1100);
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+        if(textArray.length) setTimeout(type, newTextDelay + 250);
+      });
+     </script>
 <footer>
 <p class="copyright">
 
