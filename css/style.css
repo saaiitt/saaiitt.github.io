@@ -108,6 +108,7 @@ body {
   width: 100%;
   position: relative;
   margin: 0px auto;
+  overflow-x: hidden;	
   background-color: #fdfdfd;
 }
 
