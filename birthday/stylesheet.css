@@ -9,7 +9,7 @@ body {
 	overflow-x:hidden;
 }
 .container {
-	display: none;
+	position: relative;
 }
 .peach {
 	background-color: #FFDAB9;
@@ -1087,7 +1087,7 @@ audio {
 }
 .balloons h2 {
 	text-transform: uppercase;
-	font-family: 'Signika', sans-serif;
+	font-family: 'Itim', cursive;
 	font-size: 50px;
 	color: #BF4136;
 	text-shadow: 5px 5px 5px #FFF;
